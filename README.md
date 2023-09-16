@@ -1,9 +1,9 @@
-# Antonio3213.github.io
+** Practicas Antonio : 
 
-## Depto de Sistemas y Computación
-## Ing. En Sistemas Computacionales
-## SISTEMAS PROGRAMABLES 23a
-## Objetivo:
+## 
+## 
+## 
+## 
 ##   
 
 ## TODO: (pendientes sin resolver)
