@@ -11,4 +11,5 @@ Utiliza la aplicación Blynk para enviar mensajes a tu smartphone. Para ello, lo
 *Fuente de energía
 *Conocimientos de programación
 
-## Pura doble p
+##  Imagenes
+![](https://industrysurfer.com/wp-content/uploads/2023/06/IoT-LED-Control-using-Blynk-2.0-Raspberry-Pi-Pico-W.png)
