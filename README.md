@@ -14,7 +14,7 @@ Utiliza la aplicación Blynk para enviar mensajes a tu smartphone. Para ello, lo
 ##  Imagenes
 ![](https://industrysurfer.com/wp-content/uploads/2023/06/IoT-LED-Control-using-Blynk-2.0-Raspberry-Pi-Pico-W.png)
 
-##El Sensor DHT11:
+## El Sensor DHT11:
 
 *Especificaciones básicas: El DHT11 es un sensor que puede medir la temperatura en un rango de 0°C a 50°C con una precisión de ±2°C y la humedad relativa en un rango de 20% a 80% con una precisión de ±5%. Estas lecturas se pueden obtener mediante la comunicación digital con la Raspberry Pi.
 
