@@ -20,6 +20,6 @@ Utiliza la aplicación Blynk para enviar mensajes a tu smartphone. Para ello, lo
 
 *Conexión: El DHT11 tiene tres pines: VCC (alimentación), DAT (datos) y GND (tierra). Para conectarlo a la Raspberry Pi, conecta VCC a un pin de 3.3V, DAT a un pin GPIO (por ejemplo, GPIO17), y GND a tierra (GND).
 
-*Programación: Para leer los datos del sensor en la Raspberry Pi, necesitas escribir un programa en Python (o en otro lenguaje compatible) que configure el pin GPIO para recibir datos y luego lea los valores del sensor a través de ese pin. Puedes utilizar la biblioteca "Adafruit_DHT" para facilitar la lectura de datos.
+*Programación: Para leer los datos del sensor en la Raspberry Pi, necesitas escribir un programa en Python (o en otro lenguaje compatible) que configure el pin GPIO para recibir datos y luego lea los valores del sensor a través de ese pin. Puedes utilizar la biblioteca "Adafruit_DHT" para facilitar la lectura de datos..
 
 ![](https://lirc.com.mx/web/image/product.product/5605/image_1024/%5BLE029%5D%20Sensor%20de%20Temperatura%20y%20Humedad%20DHT11?unique=f8a5dd3)
