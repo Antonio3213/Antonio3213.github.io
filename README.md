@@ -30,7 +30,7 @@ Utiliza la aplicación Blynk para enviar mensajes a tu smartphone. Para ello, lo
 # Fecha: 2023-10-16
 # Descripción: Desplegar temperatura en OLED Display con bitArray imagen
 
-'''python
+```python
 
 import machine
 import utime
@@ -61,4 +61,4 @@ while True:
     temp = obtener_temperatura()
     print('Temperatura actual: {} °C'.format(temp))
     mostrar_imagen_temperatura(temp)
-    utime.sleep(5)   '''
+    utime.sleep(5)  ```
