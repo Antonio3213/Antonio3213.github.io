@@ -25,10 +25,10 @@ Utiliza la aplicación Blynk para enviar mensajes a tu smartphone. Para ello, lo
 ![](https://lirc.com.mx/web/image/product.product/5605/image_1024/%5BLE029%5D%20Sensor%20de%20Temperatura%20y%20Humedad%20DHT11?unique=f8a5dd3)
 
 ##Practica 2.2 
-# Autor: Vasquez Pacheco Marco Antonio
-# Contacto: 
-# Fecha: 2023-10-16
-# Descripción: Desplegar temperatura en OLED Display con bitArray imagen
+Autor: Vasquez Pacheco Marco Antonio
+Contacto: 
+Fecha: 2023-10-16
+Descripción: Desplegar temperatura en OLED Display con bitArray imagen
 
 ```python
 
