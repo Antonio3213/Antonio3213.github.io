@@ -23,3 +23,50 @@ Utiliza la aplicación Blynk para enviar mensajes a tu smartphone. Para ello, lo
 *Programación: Para leer los datos del sensor en la Raspberry Pi, necesitas escribir un programa en Python (o en otro lenguaje compatible) que configure el pin GPIO para recibir datos y luego lea los valores del sensor a través de ese pin. Puedes utilizar la biblioteca "Adafruit_DHT" para facilitar la lectura de datos..
 
 ![](https://lirc.com.mx/web/image/product.product/5605/image_1024/%5BLE029%5D%20Sensor%20de%20Temperatura%20y%20Humedad%20DHT11?unique=f8a5dd3)
+
+##Practica 2.2 
+# Autor: Vasquez Pacheco Marco Antonio
+# Contacto: 
+# Fecha: 2023-10-16
+# Descripción: Desplegar temperatura en OLED Display con bitArray imagen
+
+'''python
+# Importar las bibliotecas necesarias
+import machine
+import utime
+from ssd1306 import SSD1306_I2C
+
+# Configuración del sensor de temperatura interno
+sensor_temp = machine.ADC(4)
+
+# Configuración de la pantalla 
+i2c = machine.I2C(0, scl=machine.Pin(21), sda=machine.Pin(20))
+oled = SSD1306_I2C(128, 64, i2c)
+
+# Función para leer la temperatura en grados
+def obtener_temperatura():
+    lectura = sensor_temp.read_u16() * 3.3 / (65535)
+    temperatura = 27 - (lectura - 0.706) / 0.001721
+    return temperatura
+
+# Función para mostrar imágenes temáticas según la temperatura
+def mostrar_imagen_temperatura(temperatura):
+    if temperatura < 10:
+        # Mostrar imagen de frío
+        imagen = bytearray(b'\x00\x00\x00\x00\x00\x00\x00\x00')
+    elif 10 <= temperatura < 30:
+        # Mostrar imagen de cálido
+        imagen = bytearray(b'\xff\xff\xff\xff\xff\xff\xff\xff')
+    else:
+        # Mostrar imagen de caliente
+        imagen = bytearray(b'\x00\xff\x00\xff\x00\xff\x00\xff')
+    oled.fill(0)
+    oled.framebuf.blit_buffer(imagen, 0, 0, 8, 1)
+    oled.show()
+
+# Bucle principal para medir la temperatura y mostrar la imagen
+while True:
+    temp = obtener_temperatura()
+    print('Temperatura actual: {} °C'.format(temp))
+    mostrar_imagen_temperatura(temp)
+    utime.sleep(5)   '''
